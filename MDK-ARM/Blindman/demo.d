@@ -1,39 +1,42 @@
-blindman/demo.o: ..\Core\App\Src\demo.c ..\Core\App\Inc\demo.h \
-  ..\Core\App\Inc\mpu6050.h ..\Core\Inc\i2c.h ..\Core\Inc\main.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
-  ..\Core\Inc\stm32f4xx_hal_conf.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
-  ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
-  ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
-  ..\Drivers\CMSIS\Include\core_cm4.h \
-  F:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Drivers\CMSIS\Include\cmsis_version.h \
-  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
-  ..\Drivers\CMSIS\Include\cmsis_armclang.h \
-  F:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  F:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
-  ..\Drivers\CMSIS\Include\mpu_armv7.h \
-  ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  F:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  F:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  F:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\Core\App\eMPL\inv_mpu.h ..\Core\Inc\main.h ..\Core\Inc\usart.h
+blindman\demo.o: ..\Core\App\Src\demo.c
+blindman\demo.o: ../Core/App/Inc/demo.h
+blindman\demo.o: ../Core/App/Inc/mpu6050.h
+blindman\demo.o: ../Core/Inc/i2c.h
+blindman\demo.o: ../Core/Inc/main.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+blindman\demo.o: ../Core/Inc/stm32f4xx_hal_conf.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+blindman\demo.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+blindman\demo.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
+blindman\demo.o: ../Drivers/CMSIS/Include/core_cm4.h
+blindman\demo.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+blindman\demo.o: ../Drivers/CMSIS/Include/cmsis_version.h
+blindman\demo.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+blindman\demo.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+blindman\demo.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+blindman\demo.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+blindman\demo.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+blindman\demo.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+blindman\demo.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+blindman\demo.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+blindman\demo.o: ../Core/App/eMPL/inv_mpu.h
+blindman\demo.o: ../Core/Inc/usart.h

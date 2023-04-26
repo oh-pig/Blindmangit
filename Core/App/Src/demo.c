@@ -104,7 +104,7 @@ static void demo_niming_report_senser(  int16_t  acc_x, int16_t  acc_y, int16_t 
 void demo_run(void)
 {
     uint8_t ret;
-    uint8_t key;
+    //uint8_t key;
     uint8_t niming_report = 0;
     float pit, rol, yaw;
     int16_t acc_x, acc_y, acc_z;

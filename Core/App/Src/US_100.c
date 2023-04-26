@@ -45,10 +45,9 @@ void  US100_run()
 		}
 		if(US100==1){
 		HAL_GPIO_WritePin( GPIOA, GPIO_PIN_12,GPIO_PIN_SET);
-  	HAL_Delay(5);
-  	HAL_GPIO_WritePin( GPIOA, GPIO_PIN_12,0);
+  	HAL_Delay(1);
+  	HAL_GPIO_WritePin( GPIOA, GPIO_PIN_12,GPIO_PIN_RESET);
 		US100=0;
 		}
-		
 		
 }
