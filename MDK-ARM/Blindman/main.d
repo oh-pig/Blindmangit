@@ -42,3 +42,4 @@ blindman\main.o: ../Core/App/Inc/mpu6050.h
 blindman\main.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 blindman\main.o: ../Core/App/Inc/demo.h
 blindman\main.o: ../Core/Inc/US_100.h
+blindman\main.o: ../Core/Inc/GPS.h

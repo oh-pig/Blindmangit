@@ -29,6 +29,7 @@
 #include "mpu6050.h"
 #include "demo.h"
 #include "US_100.h"
+#include "GPS.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,11 +97,10 @@ int main(void)
   MX_TIM4_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-	printf("stm32f407\r\n");
+	GPS_init();
 	 __HAL_TIM_CLEAR_FLAG(&htim4, TIM_FLAG_UPDATE);//启用前清除TIM中断标志位
 	__HAL_TIM_CLEAR_IT(&htim4, TIM_IT_UPDATE);//启用前清除TIM中断
 		HAL_TIM_Base_Start_IT(&htim4);//开启TIM计数
-		printf("stm32f407\r\n");
 //  uint8_t ReadBuffer[100]={'\0'};
 //	if(HAL_I2C_Master_Transmit(&hi2c1,((0x68<<1)|0),NULL,0,100))
 //	{
@@ -110,6 +110,7 @@ int main(void)
 //	{
 //		printf("Mpu6050 init succeed\n"); 
 //	}
+
 	//demo_run(); //6轴加速度
 	
   /* USER CODE END 2 */

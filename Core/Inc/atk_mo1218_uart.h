@@ -24,20 +24,20 @@
 #include "main.h"
 
 /* 引脚定义 */
-#define ATK_MO1218_UART_TX_GPIO_PORT            GPIOB
-#define ATK_MO1218_UART_TX_GPIO_PIN             GPIO_PIN_10
+#define ATK_MO1218_UART_TX_GPIO_PORT            GPIOA
+#define ATK_MO1218_UART_TX_GPIO_PIN             GPIO_PIN_2
 #define ATK_MO1218_UART_TX_GPIO_AF              GPIO_AF7_USART3
 #define ATK_MO1218_UART_TX_GPIO_CLK_ENABLE()    do{ __HAL_RCC_GPIOB_CLK_ENABLE(); }while(0) 
 
-#define ATK_MO1218_UART_RX_GPIO_PORT            GPIOB
-#define ATK_MO1218_UART_RX_GPIO_PIN             GPIO_PIN_11
+#define ATK_MO1218_UART_RX_GPIO_PORT            GPIOA
+#define ATK_MO1218_UART_RX_GPIO_PIN             GPIO_PIN_3
 #define ATK_MO1218_UART_RX_GPIO_AF              GPIO_AF7_USART3
 #define ATK_MO1218_UART_RX_GPIO_CLK_ENABLE()    do{ __HAL_RCC_GPIOB_CLK_ENABLE(); }while(0) 
 
-#define ATK_MO1218_UART_INTERFACE               USART3
-#define ATK_MO1218_UART_IRQn                    USART3_IRQn
-#define ATK_MO1218_UART_IRQHandler              USART3_IRQHandler
-#define ATK_MO1218_UART_CLK_ENABLE()            do{ __HAL_RCC_USART3_CLK_ENABLE(); }while(0)
+#define ATK_MO1218_UART_INTERFACE               USART2
+#define ATK_MO1218_UART_IRQn                    USART2_IRQn
+#define ATK_MO1218_UART_IRQHandler              USART2_IRQHandler
+#define ATK_MO1218_UART_CLK_ENABLE()            do{ __HAL_RCC_USART2_CLK_ENABLE(); }while(0)
 
 /* UART收发缓冲大小 */
 #define ATK_MO1218_UART_RX_BUF_SIZE             2048
