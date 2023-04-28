@@ -43,3 +43,8 @@ blindman\main.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 blindman\main.o: ../Core/App/Inc/demo.h
 blindman\main.o: ../Core/Inc/US_100.h
 blindman\main.o: ../Core/Inc/GPS.h
+blindman\main.o: ../Core/Inc/atk_mo1218.h
+blindman\main.o: ../Core/Inc/atk_mo1218_bin_msg.h
+blindman\main.o: ../Core/Inc/atk_mo1218_nmea_msg.h
+blindman\main.o: ../Core/Inc/atk_mo1218_uart.h
+blindman\main.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

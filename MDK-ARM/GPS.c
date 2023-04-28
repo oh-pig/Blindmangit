@@ -29,7 +29,6 @@ void GPS_init()
 }
 
 
- /* 读取经纬度（放大了100000倍数） */
 
 
 
@@ -137,8 +136,48 @@ void GPS_transformation(float WGS84_Lat,float WGS84_Lon,float * BD_09_Lat,float 
 
 
 
+ /* 读取经纬度（放大了100000倍数） */
 
 
+ uint8_t GPS_update(atk_mo1218_position_t position)
+{
+	float *tpla;	//纬度
+ 	float *tpln;	//经度
+	uint8_t ret;
+  atk_mo1218_time_t utc;
+  
+  int16_t altitude;
+  uint16_t speed;
+  atk_mo1218_fix_info_t fix_info;
+//  atk_mo1218_visible_satellite_info_t gps_satellite_info = {0};
+//  atk_mo1218_visible_satellite_info_t beidou_satellite_info = {0};
+//  uint8_t satellite_index;
+
+	tpla=(float*)malloc(6 *sizeof(tpla));
+	tpln=(float*)malloc(6 *sizeof(tpln));
+	
+	ret = atk_mo1218_update(&utc, &position, &altitude, &speed, &fix_info, NULL, NULL, 5000);
+	if (ret == ATK_MO1218_EOK)
+      {
+				*tpla= position.longitude.degree /100000;
+				*tpln=position.latitude.degree / 100000;
+		printf("Position: %d.%d'%s %d.%d'%s\r\n", position.longitude.degree / 100000, position.longitude.degree % 100000, (position.longitude.indicator == ATK_MO1218_LONGITUDE_EAST) ? "E" : "W",
+				position.latitude.degree / 100000, position.latitude.degree % 100000, (position.latitude.indicator == ATK_MO1218_LATITUDE_NORTH) ? "N" : "S");
+			GPS_transformation(*tpla,*tpln,tpla,tpln);
+			}
+			else
+      { 
+          /* ATK-MO1218模块未定位时，
+           * 不输出NMEA协议的GSV语句，
+           * 导致因获取不到可见GPS、北斗卫星的信息而超时失败，
+           * 此时可将函数atk_mo1218_update()的入参gps_satellite_info和beidou_satellite_info
+           * 传入NULL，从而获取未定位时的其他数据
+           */
+          printf("Error!\r\n");
+      }
+			free(tpla);free(tpln);
+			return 0;
+}
 
 
 

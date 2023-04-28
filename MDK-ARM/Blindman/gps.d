@@ -39,6 +39,7 @@ blindman\gps.o: ../Core/Inc/atk_mo1218_bin_msg.h
 blindman\gps.o: ../Core/Inc/atk_mo1218_nmea_msg.h
 blindman\gps.o: ../Core/Inc/atk_mo1218_uart.h
 blindman\gps.o: ../Core/Inc/GPS.h
+blindman\gps.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 blindman\gps.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 blindman\gps.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 blindman\gps.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

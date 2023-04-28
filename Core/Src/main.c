@@ -49,6 +49,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+atk_mo1218_position_t position;
+
 
 /* USER CODE END PV */
 
