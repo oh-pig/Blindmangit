@@ -1,4 +1,4 @@
-blindman\gps.o: GPS.c
+blindman\gps.o: ..\Core\App\Src\GPS.c
 blindman\gps.o: ../Core/Inc/usart.h
 blindman\gps.o: ../Core/Inc/main.h
 blindman\gps.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h

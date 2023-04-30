@@ -896,7 +896,7 @@
             <File>
               <FileName>GPS.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\GPS.c</FilePath>
+              <FilePath>..\Core\App\Src\GPS.c</FilePath>
             </File>
           </Files>
         </Group>

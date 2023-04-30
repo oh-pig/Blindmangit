@@ -128,7 +128,7 @@ void GPS_transformation(float WGS84_Lat,float WGS84_Lon,float * BD_09_Lat,float 
 	
 	 GPS84_To_GCJ02(WGS84_Lat,WGS84_Lon,BD_09_Lat,BD_09_Lon);           //GPS坐标转火星坐标
 
-	 GCJ02_To_BD09(*BD_09_Lat,*BD_09_Lon,BD_09_Lat,BD_09_Lon);           //火星坐标转百度坐标 
+	 //GCJ02_To_BD09(*BD_09_Lat,*BD_09_Lon,BD_09_Lat,BD_09_Lon);           //火星坐标转百度坐标 
 }
 
 
