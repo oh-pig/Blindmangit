@@ -164,6 +164,7 @@ void GPS_transformation(float WGS84_Lat,float WGS84_Lon,float * BD_09_Lat,float 
 		printf("Position: %d.%d'%s %d.%d'%s\r\n", position.longitude.degree / 100000, position.longitude.degree % 100000, (position.longitude.indicator == ATK_MO1218_LONGITUDE_EAST) ? "E" : "W",
 				position.latitude.degree / 100000, position.latitude.degree % 100000, (position.latitude.indicator == ATK_MO1218_LATITUDE_NORTH) ? "N" : "S");
 			GPS_transformation(*tpla,*tpln,tpla,tpln);
+				free(tpla);free(tpln);
 			}
 			else
       { 
@@ -173,9 +174,12 @@ void GPS_transformation(float WGS84_Lat,float WGS84_Lon,float * BD_09_Lat,float 
            * 此时可将函数atk_mo1218_update()的入参gps_satellite_info和beidou_satellite_info
            * 传入NULL，从而获取未定位时的其他数据
            */
+			
           printf("Error!\r\n");
+				free(tpla);free(tpln);
+					return 1;
       }
-			free(tpla);free(tpln);
+			
 			return 0;
 }
 

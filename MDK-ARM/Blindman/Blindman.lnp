@@ -34,6 +34,7 @@
 "blindman\atk_mo1218_nmea_msg.o"
 "blindman\atk_mo1218_uart.o"
 "blindman\gps.o"
+"blindman\qmc5883l.o"
 "blindman\inv_mpu.o"
 "blindman\inv_mpu_dmp_motion_driver.o"
 --library_type=microlib --strict --scatter "Blindman\Blindman.sct"

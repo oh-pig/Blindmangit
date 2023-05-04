@@ -98,6 +98,7 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_USART2_UART_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
 	GPS_init();
 	 __HAL_TIM_CLEAR_FLAG(&htim4, TIM_FLAG_UPDATE);//启用前清除TIM中断标志位
