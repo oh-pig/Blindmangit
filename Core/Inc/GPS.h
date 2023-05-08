@@ -16,9 +16,9 @@
 #include "main.h"
 #include "atk_mo1218.h"
 #include <stdlib.h>
-
+extern atk_mo1218_position_t position;
 void GPS_init(void);
-uint8_t GPS_update(atk_mo1218_position_t position);
+uint8_t GPS_update(void);
 
 
 

@@ -5,6 +5,8 @@
 #include "stdio.h"
 #include "string.h"	 
 #include "math.h"
+atk_mo1218_position_t position;
+
 void GPS_init()
 {
 		uint8_t ret=1;
@@ -139,7 +141,7 @@ void GPS_transformation(float WGS84_Lat,float WGS84_Lon,float * BD_09_Lat,float 
  /* 读取经纬度（放大了100000倍数） */
 
 
- uint8_t GPS_update(atk_mo1218_position_t position)
+ uint8_t GPS_update(void)
 {
 	float *tpla;	//纬度
  	float *tpln;	//经度

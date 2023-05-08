@@ -49,7 +49,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-atk_mo1218_position_t position;
+
 
 
 /* USER CODE END PV */
@@ -122,7 +122,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//		US100_run();    //
+//		US100_run();    //³¬Éù²¨
+		GPS_update();
 		HAL_Delay(1);
 //	  HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_9);
 //	  HAL_Delay(1000);

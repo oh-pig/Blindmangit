@@ -1,0 +1,10 @@
+blindman\cjson.o: ..\Core\App\Src\cJSON.c
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+blindman\cjson.o: ../Core/App/Inc/cJSON.h
+blindman\cjson.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
