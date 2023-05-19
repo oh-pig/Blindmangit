@@ -30,6 +30,9 @@
 #include "demo.h"
 #include "US_100.h"
 #include "GPS.h"
+#include "cJSON.h"
+#include "delay.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,13 +100,15 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
-  MX_USART2_UART_Init();
   MX_I2C2_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-	GPS_init();
+	delay_init(168);
+
 	 __HAL_TIM_CLEAR_FLAG(&htim4, TIM_FLAG_UPDATE);//启用前清除TIM中断标志位
 	__HAL_TIM_CLEAR_IT(&htim4, TIM_IT_UPDATE);//启用前清除TIM中断
-		HAL_TIM_Base_Start_IT(&htim4);//开启TIM计数
+		HAL_TIM_Base_Start_IT(&htim4);//开启TIM计数	
+		GPS_init();
 //  uint8_t ReadBuffer[100]={'\0'};
 //	if(HAL_I2C_Master_Transmit(&hi2c1,((0x68<<1)|0),NULL,0,100))
 //	{
@@ -124,7 +129,7 @@ int main(void)
   {
 //		US100_run();    //超声波
 		GPS_update();
-		HAL_Delay(1);
+		HAL_Delay(100);
 //	  HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_9);
 //	  HAL_Delay(1000);
 //	  printf("Hello world\n");

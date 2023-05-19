@@ -9,7 +9,7 @@ atk_mo1218_position_t position;
 
 void GPS_init()
 {
-		uint8_t ret=1;
+		uint8_t ret;
 		/* 初始化ATK-MO1218模块 */
 	ret = atk_mo1218_init(38400);
 	 if (ret != 0)
@@ -17,6 +17,7 @@ void GPS_init()
   			printf("ATK-MO1218 init failed!\r\n");
         while (1);
     }
+		printf("ATK-MO1218 init ok!\r\n");
 		/* 配置ATK-MO1218模块 */
     ret  = atk_mo1218_factory_reset(ATK_MO1218_FACTORY_RESET_REBOOT);
     ret += atk_mo1218_config_output_type(ATK_MO1218_OUTPUT_NMEA, ATK_MO1218_SAVE_SRAM_FLASH);

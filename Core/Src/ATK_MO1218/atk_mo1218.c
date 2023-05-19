@@ -33,7 +33,7 @@ uint8_t atk_mo1218_init(uint32_t baudrate)
     uint8_t ret;
     atk_mo1218_sw_version_t version;
     
-    atk_mo1218_uart_init(baudrate);
+ //   atk_mo1218_uart_init(baudrate);
     ret = atk_mo1218_get_sw_version(&version);
     if (ret != ATK_MO1218_EOK)
     {
