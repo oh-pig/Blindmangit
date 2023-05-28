@@ -1,5 +1,16 @@
 <!--index.wxml-->
-<view class="container">
+
+<map
+id="map"
+longitude="{{longitude}}"
+latitude="{{latitude}}"
+scale="6"
+markers="{{markers}}"
+bindmarkertap="markertap"
+show-location>
+</map>
+
+<!-- <view class="container">
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" bindtap="bindViewTap">
@@ -20,4 +31,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-</view>
+</view> -->
